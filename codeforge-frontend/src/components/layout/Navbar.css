@@ -1,0 +1,88 @@
+.cf-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-sm) var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.cf-navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.cf-navbar-brand-mark {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  background: var(--color-accent-muted);
+  color: var(--color-accent);
+  border-radius: var(--radius-md);
+}
+
+.cf-navbar-brand-mark svg {
+  width: 15px;
+  height: 15px;
+}
+
+.cf-navbar-brand-text {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 600;
+}
+
+.cf-navbar-brand-accent {
+  color: var(--color-accent);
+}
+
+.cf-navbar-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.cf-navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.cf-navbar-user:hover {
+  color: var(--color-text-primary);
+  background: var(--color-surface-raised);
+}
+
+.cf-navbar-user svg {
+  width: 15px;
+  height: 15px;
+}
+
+.cf-navbar-logout {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.cf-navbar-logout:hover {
+  color: var(--color-error);
+  border-color: var(--color-error);
+}
+
+.cf-navbar-logout svg {
+  width: 15px;
+  height: 15px;
+}
+

@@ -1,0 +1,81 @@
+.cpm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: grid;
+  place-items: center;
+  z-index: 100;
+  padding: var(--space-md);
+}
+
+.cpm-modal {
+  width: 100%;
+  max-width: 380px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.cpm-title {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-md);
+}
+
+.cpm-input {
+  width: 100%;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  font-size: var(--text-sm);
+  color: var(--color-text-primary);
+}
+
+.cpm-input:focus {
+  border-color: var(--color-accent);
+}
+
+.cpm-error {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--color-error);
+  margin-top: 6px;
+}
+
+.cpm-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+.cpm-btn {
+  padding: 9px 16px;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.cpm-btn--ghost {
+  color: var(--color-text-secondary);
+}
+
+.cpm-btn--ghost:hover {
+  color: var(--color-text-primary);
+}
+
+.cpm-btn--primary {
+  background: var(--color-accent);
+  color: #0d0f14;
+}
+
+.cpm-btn--primary:hover:not(:disabled) {
+  background: var(--color-accent-hover);
+}
+
+.cpm-btn--primary:disabled {
+  opacity: 0.6;
+}
