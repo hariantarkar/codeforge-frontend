@@ -1,0 +1,55 @@
+.rb-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.rb-save,
+.rb-run {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.rb-save svg,
+.rb-run svg {
+  width: 14px;
+  height: 14px;
+}
+
+.rb-save {
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+}
+
+.rb-save:hover:not(:disabled) {
+  color: var(--color-text-primary);
+  border-color: var(--color-text-muted);
+}
+
+.rb-save:disabled {
+  opacity: 0.5;
+}
+
+.rb-run {
+  background: var(--color-accent);
+  color: #0d0f14;
+  margin-left: auto;
+}
+
+.rb-run:hover:not(:disabled) {
+  background: var(--color-accent-hover);
+  box-shadow: 0 0 0 4px var(--color-accent-muted);
+}
+
+.rb-run--busy {
+  opacity: 0.8;
+}
