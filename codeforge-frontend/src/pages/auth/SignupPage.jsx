@@ -207,7 +207,7 @@ export default function SignupPage() {
                   name="username"
                   type="text"
                   className="cf-auth-input"
-                  placeholder="e.g. Hari Antarkar"
+                  placeholder="e.g. Your name"
                   value={formData.username}
                   onChange={handleChange}
                 />
